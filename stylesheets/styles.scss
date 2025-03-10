@@ -1,0 +1,55 @@
+$accentColor: #9908A6;
+$headerFont: Gadner Bold, bold;
+$textFont: Futura ND;
+
+@mixin landingPageHeader{
+    color: #000000;
+    font-family: $headerFont;
+    font-size: 100px;
+}
+
+@mixin landingPageText{
+    color: #000000;
+    font-family: $textFont;
+    font-size: 25px;
+}
+
+@mixin landingText{
+    
+}
+
+*{
+    margin: 0; 
+}
+
+.landingContent{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    margin-left: 10vh;
+
+    h1{
+        @include landingPageHeader;
+    }
+
+    span{
+        color: $accentColor;
+    }
+}
+
+.aboutPage{
+    margin-left: 10vh;
+    width: 70vw;
+
+    h1{
+        @include landingPageHeader;
+    }
+
+    span{
+        color: $accentColor;
+    }
+
+    p{
+        @include landingPageText;
+    }
+}

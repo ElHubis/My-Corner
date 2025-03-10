@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+}
+
+.landingContent {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  margin-left: 10vh;
+}
+.landingContent h1 {
+  color: #000000;
+  font-family: Gadner Bold, bold;
+  font-size: 100px;
+}
+.landingContent span {
+  color: #9908A6;
+}
+
+.aboutPage {
+  margin-left: 10vh;
+  width: 70vw;
+}
+.aboutPage h1 {
+  color: #000000;
+  font-family: Gadner Bold, bold;
+  font-size: 100px;
+}
+.aboutPage span {
+  color: #9908A6;
+}
+.aboutPage p {
+  color: #000000;
+  font-family: Futura ND;
+  font-size: 25px;
+}
+
+/*# sourceMappingURL=styles.css.map */
