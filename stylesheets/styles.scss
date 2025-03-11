@@ -38,6 +38,7 @@ $textFont: Futura ND;
 }
 
 .aboutPage{
+    height: 75vh;
     margin-left: 10vh;
     width: 70vw;
 
@@ -51,5 +52,36 @@ $textFont: Futura ND;
 
     p{
         @include landingPageText;
+    }
+}
+
+.aboutMe{
+    height: 75vh;
+    margin-left: 10vh;
+    width: 70vw;
+
+    h1{
+        @include landingPageHeader;
+    }
+
+    span{
+        color: $accentColor;
+    }
+
+    p{
+        @include landingPageText;
+    }
+}
+
+.linkBlocks{
+    display: flex;
+    background-repeat: no-repeat;
+    height: 70vh;
+    width: 80vw;
+    
+    img{
+        width: 80vw;
+        height: 40vh;
+        object-fit: cover;
     }
 }

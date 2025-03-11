@@ -18,6 +18,7 @@
 }
 
 .aboutPage {
+  height: 75vh;
   margin-left: 10vh;
   width: 70vw;
 }
@@ -33,6 +34,37 @@
   color: #000000;
   font-family: Futura ND;
   font-size: 25px;
+}
+
+.aboutMe {
+  height: 75vh;
+  margin-left: 10vh;
+  width: 70vw;
+}
+.aboutMe h1 {
+  color: #000000;
+  font-family: Gadner Bold, bold;
+  font-size: 100px;
+}
+.aboutMe span {
+  color: #9908A6;
+}
+.aboutMe p {
+  color: #000000;
+  font-family: Futura ND;
+  font-size: 25px;
+}
+
+.linkBlocks {
+  display: flex;
+  background-repeat: no-repeat;
+  height: 70vh;
+  width: 80vw;
+}
+.linkBlocks img {
+  width: 80vw;
+  height: 40vh;
+  object-fit: cover;
 }
 
 /*# sourceMappingURL=styles.css.map */

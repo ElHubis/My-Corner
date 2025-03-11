@@ -1,6 +1,7 @@
 addEventListener("DOMContentLoaded", function () {
     const mainBody = document.getElementsByTagName("body")[0];
 
+    // Div and content for the welcome text
     const landingContent = document.createElement("div");
     landingContent.className = "landingContent";
 
@@ -9,6 +10,7 @@ addEventListener("DOMContentLoaded", function () {
     welcomeText.innerHTML = (`Hi, I'm <span>Ruben</span> <br></br> And this is my <span>corner</span>`);
     landingContent.appendChild(welcomeText);
 
+    // Div and content for the about the page section 
     const aboutPage = document.createElement("div");
     aboutPage.className = ("aboutPage");
 
@@ -21,8 +23,34 @@ addEventListener("DOMContentLoaded", function () {
     aboutPage.appendChild(aboutPageHeader);
     aboutPage.appendChild(aboutPageText);
 
-    const aboutMe = document.createElement("h1");
+    // Div and content for the about me section
+    const aboutMe = document.createElement("div");
+    aboutMe.className = ("aboutMe");
 
+    const aboutMeHeader = document.createElement("h1");
+    aboutMeHeader.innerHTML = (`...and <span>who</span> the hell am <span>I</span>?`);
+
+    const aboutMeText = document.createElement("p");
+    aboutMeText.innerHTML = (`Ahh, an age old question, as old as humanity itself, really. Possibly even older. But without pretending to some sort of sophisticated philosopher, I'll introduce myself.<br></br>
+                            I'm Ruben. I'm 19 and I live in Sweden. I like making things, and that's mostly why I made this page, to show those things to others. More specifically I like writing, design, programing and construction. I also really like cooking, training and the color <span>purple</span> (surprise) but I'm probably not going to post any of that...unless?<br></br>
+                            But yeah that's what I'm offering you, and if you would be so kind as to scroll down a bit you're going to see a few links. Feel free to click them! Or not, but that would be kind of sad :(`);
+    aboutMe.appendChild(aboutMeHeader);
+    aboutMe.appendChild(aboutMeText);
+
+    // Link blocks for navigating to subpages
+    const linkBlocks = document.createElement("div");
+    linkBlocks.className = ("linkBlocks");
+
+    const linkImage = document.createElement("img");
+    linkImage.src = ("images/retro-poster.jpg");
+    linkBlocks.appendChild(linkImage)
+
+    const linkHeader = document.createElement("h1");
+    linkHeader.innerHTML = (`Design`);
+    linkBlocks.appendChild(linkHeader)
+    
     mainBody.appendChild(landingContent);
     mainBody.appendChild(aboutPage);
+    mainBody.appendChild(aboutMe);
+    mainBody.appendChild(linkBlocks)
 })
