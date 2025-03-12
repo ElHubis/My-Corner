@@ -6,7 +6,7 @@
   height: 100vh;
   display: flex;
   align-items: center;
-  margin-left: 10vh;
+  margin-left: 10vw;
 }
 .landingContent h1 {
   color: #000000;
@@ -19,7 +19,7 @@
 
 .aboutPage {
   height: 75vh;
-  margin-left: 10vh;
+  margin-left: 10vw;
   width: 70vw;
 }
 .aboutPage h1 {
@@ -38,7 +38,7 @@
 
 .aboutMe {
   height: 75vh;
-  margin-left: 10vh;
+  margin-left: 10vw;
   width: 70vw;
 }
 .aboutMe h1 {
@@ -57,14 +57,48 @@
 
 .linkBlocks {
   display: flex;
-  background-repeat: no-repeat;
+  flex-direction: column;
   height: 70vh;
-  width: 80vw;
+  align-items: center;
+  justify-content: center;
 }
-.linkBlocks img {
+
+.blockStylesLeft {
+  padding-bottom: 65px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.blockStylesLeft img {
   width: 80vw;
   height: 40vh;
   object-fit: cover;
+}
+.blockStylesLeft h1 {
+  position: absolute;
+  left: 10vw;
+  font-family: Gadner Bold, bold;
+  font-size: 70px;
+  color: #ffffff;
+}
+
+.blockStylesRight {
+  padding-bottom: 65px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.blockStylesRight img {
+  width: 80vw;
+  height: 40vh;
+  object-fit: cover;
+}
+.blockStylesRight h1 {
+  position: absolute;
+  left: 52vw;
+  font-family: Gadner Bold, bold;
+  font-size: 70px;
+  color: #ffffff;
 }
 
 /*# sourceMappingURL=styles.css.map */

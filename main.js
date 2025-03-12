@@ -41,14 +41,35 @@ addEventListener("DOMContentLoaded", function () {
     const linkBlocks = document.createElement("div");
     linkBlocks.className = ("linkBlocks");
 
+    // Writing block
+    const writingBlock = document.createElement("div")
+    writingBlock.className = ("blockStylesLeft");
+
+    const writingImage = document.createElement("img");
+    writingImage.src = ("images/skriver-på-papper.jpg");
+    writingBlock.appendChild(writingImage)
+
+    const writingHeader = document.createElement("h1");
+    writingHeader.innerHTML = (`Writing`);
+    writingBlock.appendChild(writingHeader);
+
+    linkBlocks.appendChild(writingBlock);
+
+    // Design block
+    const designBlock = document.createElement("div")
+    designBlock.className = ("blockStylesRight");
+
     const linkImage = document.createElement("img");
     linkImage.src = ("images/retro-poster.jpg");
-    linkBlocks.appendChild(linkImage)
+    designBlock.appendChild(linkImage)
 
     const linkHeader = document.createElement("h1");
     linkHeader.innerHTML = (`Design`);
-    linkBlocks.appendChild(linkHeader)
+    designBlock.appendChild(linkHeader);
+
+    linkBlocks.appendChild(designBlock);
     
+    // Appending children to the body
     mainBody.appendChild(landingContent);
     mainBody.appendChild(aboutPage);
     mainBody.appendChild(aboutMe);
