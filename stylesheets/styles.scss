@@ -14,15 +14,20 @@ $textFont: Futura ND;
     font-size: 25px;
 }
 
-@mixin linkBlockSettings ($left: 10vw){
-    padding-bottom: 65px;
+@mixin linkBlockSettings ($left: 8vw){
+    margin-bottom: 65px;
     display: flex;
     align-items: center;
     position: relative;
 
+    a{
+        display: flex;
+        align-items: center;
+    }
+
     img{
-        width: 80vw;
-        height: 40vh;
+        width: 50vw;
+        height: 25vh;
         object-fit: cover;
     }
 
@@ -40,7 +45,8 @@ $textFont: Futura ND;
 }
 
 .landingContent{
-    height: 100vh;
+    min-height: 100vh;
+    width: 100vw;
     display: flex;
     align-items: center;
     margin-left: 10vw;
@@ -54,8 +60,24 @@ $textFont: Futura ND;
     }
 }
 
+.scrollBox{
+    width: 88px;
+    align-self: flex-end;
+    p{
+        text-align: center;
+        font-family: $headerFont;
+        font-size: 15px;
+        transform: rotate(-45deg);
+    }
+    
+    img{
+
+        right: -4vw;
+    }
+}
+
 .aboutPage{
-    height: 75vh;
+    min-height: 75vh;
     margin-left: 10vw;
     width: 70vw;
 
@@ -73,7 +95,7 @@ $textFont: Futura ND;
 }
 
 .aboutMe{
-    height: 75vh;
+    min-height: 75vh;
     margin-left: 10vw;
     width: 70vw;
 
@@ -94,14 +116,40 @@ $textFont: Futura ND;
     display: flex;
     flex-direction: column;
     height: 70vh;
-    align-items: center;
-    justify-content: center;
 }
 
 .blockStylesLeft{
     @include linkBlockSettings();
+    align-self: flex-start;
+    left: 10vw;
 }
 
 .blockStylesRight{
-    @include linkBlockSettings($left: 52vw);
+    @include linkBlockSettings($left: 30vw);
+    align-self: flex-end;
+    right: 10vw;
+}
+
+.writingBlock{
+    border-style: solid;
+    border-width: 10px;
+    border-color: #2F3339;
+}
+
+.designBlock{
+    border-style: solid;
+    border-width: 10px;
+    border-color: #115A85;
+}
+
+.softwareBlock{
+    border-style: solid;
+    border-width: 10px;
+    border-color: #129FCA;
+}
+
+.otherBlock{
+    border-style: solid;
+    border-width: 10px;
+    border-color: #0C5298;
 }

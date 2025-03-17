@@ -1,0 +1,25 @@
+{
+    "linkCards":{
+        "writing":{
+            "image": "images/skriver-på-papper.jpg",
+            "text": "Writing",
+            "color": "#2F3339"
+        },
+
+        "design":{
+            "image": "images/retro-poster.jpg",
+            "text": "Design",
+            "color": "#115A85"            
+        },
+        "software":{
+            "image": "images/kod-bild.png",
+            "text": "Software",
+            "color": "#129FCA"            
+        },
+        "other":{
+            "image": "images/konstruktion-bild.jpg",
+            "text": "Other",
+            "color": "#0C5298"            
+        }
+    }
+}

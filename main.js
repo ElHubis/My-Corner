@@ -10,6 +10,20 @@ addEventListener("DOMContentLoaded", function () {
     welcomeText.innerHTML = (`Hi, I'm <span>Ruben</span> <br></br> And this is my <span>corner</span>`);
     landingContent.appendChild(welcomeText);
 
+    const scrollBox = document.createElement("div");
+    scrollBox.className = "scrollBox";
+
+    const scrollBoxText = document.createElement("p");
+    scrollBoxText.innerHTML = ("Scroll down for cool things");
+    scrollBox.appendChild(scrollBoxText);
+
+    const scrollBoxArrow = document.createElement("img");
+    scrollBoxArrow.src = ("SVGs/Vector.svg");
+    scrollBox.appendChild(scrollBoxArrow);
+
+    landingContent.appendChild(scrollBox)
+
+
     // Div and content for the about the page section 
     const aboutPage = document.createElement("div");
     aboutPage.className = ("aboutPage");
@@ -41,33 +55,41 @@ addEventListener("DOMContentLoaded", function () {
     const linkBlocks = document.createElement("div");
     linkBlocks.className = ("linkBlocks");
 
-    // Writing block
-    const writingBlock = document.createElement("div")
-    writingBlock.className = ("blockStylesLeft");
+    fetch("data.json")
+        .then(response => response.json())
 
-    const writingImage = document.createElement("img");
-    writingImage.src = ("images/skriver-på-papper.jpg");
-    writingBlock.appendChild(writingImage)
+        .then(links =>{
+            const cards = Object.values(links.linkCards);
+            cards.forEach(card => console.log(card));
 
-    const writingHeader = document.createElement("h1");
-    writingHeader.innerHTML = (`Writing`);
-    writingBlock.appendChild(writingHeader);
+            cards.forEach((card, index) => {
+                const linkBlock = document.createElement("div");
+                linkBlock.classList.add(`${card.text.toLowerCase()}Block`)
 
-    linkBlocks.appendChild(writingBlock);
+                if(index % 2 == 1){
+                    linkBlock.classList.add("blockStylesRight");
+                }
 
-    // Design block
-    const designBlock = document.createElement("div")
-    designBlock.className = ("blockStylesRight");
+                else{
+                    linkBlock.classList.add("blockStylesLeft");
+                }
 
-    const linkImage = document.createElement("img");
-    linkImage.src = ("images/retro-poster.jpg");
-    designBlock.appendChild(linkImage)
+                const linkElement = document.createElement("a");
+                linkBlock.appendChild(linkElement);
 
-    const linkHeader = document.createElement("h1");
-    linkHeader.innerHTML = (`Design`);
-    designBlock.appendChild(linkHeader);
+                const imageElement = document.createElement("img");
+                imageElement.src = card.image;
+                imageElement.alt = card.text;
+                linkElement.appendChild(imageElement);
+                
+                const textElement = document.createElement("h1");
+                textElement.textContent = card.text;
+                linkElement.appendChild(textElement);
 
-    linkBlocks.appendChild(designBlock);
+                linkBlocks.appendChild(linkBlock);
+            })
+
+        })
     
     // Appending children to the body
     mainBody.appendChild(landingContent);
