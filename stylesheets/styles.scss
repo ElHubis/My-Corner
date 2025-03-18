@@ -15,28 +15,28 @@ $textFont: Futura ND;
 }
 
 @mixin linkBlockSettings ($left: 8vw){
-    margin-bottom: 65px;
-    display: flex;
-    align-items: center;
-    position: relative;
+//     margin-bottom: 65px;
+//     display: flex;
+//     align-items: center;
+//     position: relative;
 
-    a{
-        display: flex;
-        align-items: center;
-    }
+//     a{
+//         display: flex;
+//         align-items: center;
+//     }
 
-    img{
-        width: 50vw;
-        height: 25vh;
-        object-fit: cover;
-    }
+//     img{
+//         width: 50vw;
+//         height: 25vh;
+//         object-fit: cover;
+//     }
 
     h1{
-        position: absolute;
-        left: $left;
+//         position: absolute;
+//         left: $left;
         font-family: $headerFont;
-        font-size: 70px;
-        color: #ffffff;
+//         font-size: 70px;
+//         color: #ffffff;
     }
 }
 
@@ -44,12 +44,17 @@ $textFont: Futura ND;
     margin: 0; 
 }
 
+img{
+    display: block;
+    width: 50%;
+}
+
 .landingContent{
-    min-height: 100vh;
-    width: 100vw;
-    display: flex;
-    align-items: center;
-    margin-left: 10vw;
+//     min-height: 100vh;
+//     width: 100vw;
+//     display: flex;
+//     align-items: center;
+//     margin-left: 10vw;
 
     h1{
         @include landingPageHeader;
@@ -61,25 +66,25 @@ $textFont: Futura ND;
 }
 
 .scrollBox{
-    width: 88px;
-    align-self: flex-end;
+//     width: 88px;
+//     align-self: flex-end;
     p{
-        text-align: center;
+//         text-align: center;
         font-family: $headerFont;
         font-size: 15px;
-        transform: rotate(-45deg);
+        // transform: rotate(-45deg);
     }
     
-    img{
+//     img{
 
-        right: -4vw;
-    }
+//         right: -4vw;
+//     }
 }
 
 .aboutPage{
-    min-height: 75vh;
-    margin-left: 10vw;
-    width: 70vw;
+//     min-height: 75vh;
+//     margin-left: 10vw;
+//     width: 70vw;
 
     h1{
         @include landingPageHeader;
@@ -95,9 +100,9 @@ $textFont: Futura ND;
 }
 
 .aboutMe{
-    min-height: 75vh;
-    margin-left: 10vw;
-    width: 70vw;
+//     min-height: 75vh;
+//     margin-left: 10vw;
+//     width: 70vw;
 
     h1{
         @include landingPageHeader;
@@ -112,44 +117,44 @@ $textFont: Futura ND;
     }
 }
 
-.linkBlocks{
-    display: flex;
-    flex-direction: column;
-    height: 70vh;
-}
+// .linkBlocks{
+//     display: flex;
+//     flex-direction: column;
+//     height: 70vh;
+// }
 
-.blockStylesLeft{
-    @include linkBlockSettings();
-    align-self: flex-start;
-    left: 10vw;
-}
+// .blockStylesLeft{
+//     @include linkBlockSettings();
+//     align-self: flex-start;
+//     left: 10vw;
+// }
 
-.blockStylesRight{
-    @include linkBlockSettings($left: 30vw);
-    align-self: flex-end;
-    right: 10vw;
-}
+// .blockStylesRight{
+//     @include linkBlockSettings($left: 30vw);
+//     align-self: flex-end;
+//     right: 10vw;
+// }
 
-.writingBlock{
-    border-style: solid;
-    border-width: 10px;
-    border-color: #2F3339;
-}
+// .writingBlock{
+//     border-style: solid;
+//     border-width: 10px;
+//     border-color: #2F3339;
+// }
 
-.designBlock{
-    border-style: solid;
-    border-width: 10px;
-    border-color: #115A85;
-}
+// .designBlock{
+//     border-style: solid;
+//     border-width: 10px;
+//     border-color: #115A85;
+// }
 
-.softwareBlock{
-    border-style: solid;
-    border-width: 10px;
-    border-color: #129FCA;
-}
+// .softwareBlock{
+//     border-style: solid;
+//     border-width: 10px;
+//     border-color: #129FCA;
+// }
 
-.otherBlock{
-    border-style: solid;
-    border-width: 10px;
-    border-color: #0C5298;
-}
+// .otherBlock{
+//     border-style: solid;
+//     border-width: 10px;
+//     border-color: #0C5298;
+// }

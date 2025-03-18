@@ -2,13 +2,11 @@
   margin: 0;
 }
 
-.landingContent {
-  min-height: 100vh;
-  width: 100vw;
-  display: flex;
-  align-items: center;
-  margin-left: 10vw;
+img {
+  display: block;
+  width: 50%;
 }
+
 .landingContent h1 {
   color: #000000;
   font-family: Gadner Bold, bold;
@@ -18,25 +16,11 @@
   color: #9908A6;
 }
 
-.scrollBox {
-  width: 88px;
-  align-self: flex-end;
-}
 .scrollBox p {
-  text-align: center;
   font-family: Gadner Bold, bold;
   font-size: 15px;
-  transform: rotate(-45deg);
-}
-.scrollBox img {
-  right: -4vw;
 }
 
-.aboutPage {
-  min-height: 75vh;
-  margin-left: 10vw;
-  width: 70vw;
-}
 .aboutPage h1 {
   color: #000000;
   font-family: Gadner Bold, bold;
@@ -51,11 +35,6 @@
   font-size: 25px;
 }
 
-.aboutMe {
-  min-height: 75vh;
-  margin-left: 10vw;
-  width: 70vw;
-}
 .aboutMe h1 {
   color: #000000;
   font-family: Gadner Bold, bold;
@@ -68,86 +47,6 @@
   color: #000000;
   font-family: Futura ND;
   font-size: 25px;
-}
-
-.linkBlocks {
-  display: flex;
-  flex-direction: column;
-  height: 70vh;
-}
-
-.blockStylesLeft {
-  margin-bottom: 65px;
-  display: flex;
-  align-items: center;
-  position: relative;
-  align-self: flex-start;
-  left: 10vw;
-}
-.blockStylesLeft a {
-  display: flex;
-  align-items: center;
-}
-.blockStylesLeft img {
-  width: 50vw;
-  height: 25vh;
-  object-fit: cover;
-}
-.blockStylesLeft h1 {
-  position: absolute;
-  left: 8vw;
-  font-family: Gadner Bold, bold;
-  font-size: 70px;
-  color: #ffffff;
-}
-
-.blockStylesRight {
-  margin-bottom: 65px;
-  display: flex;
-  align-items: center;
-  position: relative;
-  align-self: flex-end;
-  right: 10vw;
-}
-.blockStylesRight a {
-  display: flex;
-  align-items: center;
-}
-.blockStylesRight img {
-  width: 50vw;
-  height: 25vh;
-  object-fit: cover;
-}
-.blockStylesRight h1 {
-  position: absolute;
-  left: 30vw;
-  font-family: Gadner Bold, bold;
-  font-size: 70px;
-  color: #ffffff;
-}
-
-.writingBlock {
-  border-style: solid;
-  border-width: 10px;
-  border-color: #2F3339;
-}
-
-.designBlock {
-  border-style: solid;
-  border-width: 10px;
-  border-color: #115A85;
-}
-
-.softwareBlock {
-  border-style: solid;
-  border-width: 10px;
-  border-color: #129FCA;
-}
-
-.otherBlock {
-  border-style: solid;
-  border-width: 10px;
-  border-color: #0C5298;
 }
 
 /*# sourceMappingURL=styles.css.map */
