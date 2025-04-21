@@ -47,7 +47,7 @@ addEventListener("DOMContentLoaded", function () {
     const aboutMeText = document.createElement("p");
     aboutMeText.innerHTML = (`Ahh, an age old question, as old as humanity itself, really. Possibly even older. But without pretending to some sort of sophisticated philosopher, I'll introduce myself.<br></br>
                             I'm Ruben. I'm 19 and I live in Sweden. I like making things, and that's mostly why I made this page, to show those things to others. More specifically I like writing, design, programing and construction. I also really like cooking, training and the color <span>purple</span> (surprise) but I'm probably not going to post any of that...unless?<br></br>
-                            But yeah that's what I'm offering you, and if you would be so kind as to scroll down a bit you're going to see a few links. Feel free to click them! Or not, but that would be kind of sad :(`);
+                        But yeah that's what I'm offering you, and if you would be so kind as to scroll down a bit you're going to see a few links. Feel free to click them! Or not, but that would be kind of sad :&nbsp;(`); 
     aboutMe.appendChild(aboutMeHeader);
     aboutMe.appendChild(aboutMeText);
 
@@ -67,24 +67,29 @@ addEventListener("DOMContentLoaded", function () {
                 linkBlock.classList.add(`${card.text.toLowerCase()}Block`)
 
                 if(index % 2 == 1){
-                    linkBlock.classList.add("blockStylesRight");
+                    linkBlock.classList.add("blockStyles");
                 }
 
                 else{
-                    linkBlock.classList.add("blockStylesLeft");
+                    linkBlock.classList.add("blockStyles");
                 }
 
                 const linkElement = document.createElement("a");
                 linkBlock.appendChild(linkElement);
+                linkElement.classList.add("linkElement")
+
+                const killMe = document.createElement("div");
+                linkElement.appendChild(killMe);
+                killMe.classList.add("killMe")
 
                 const imageElement = document.createElement("img");
                 imageElement.src = card.image;
                 imageElement.alt = card.text;
-                linkElement.appendChild(imageElement);
+                killMe.appendChild(imageElement);
                 
                 const textElement = document.createElement("h1");
                 textElement.textContent = card.text;
-                linkElement.appendChild(textElement);
+                killMe.appendChild(textElement);
 
                 linkBlocks.appendChild(linkBlock);
             })
