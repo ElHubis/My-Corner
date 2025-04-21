@@ -3,23 +3,27 @@
         "writing":{
             "image": "images/skriver-på-papper.jpg",
             "text": "Writing",
-            "color": "#2F3339"
+            "color": "#2F3339",
+            "link": "writing.html"
         },
 
         "design":{
             "image": "images/retro-poster.jpg",
             "text": "Design",
-            "color": "#115A85"            
+            "color": "#115A85",
+            "link": "design.html"            
         },
         "software":{
             "image": "images/kod-bild.png",
             "text": "Software",
-            "color": "#129FCA"            
+            "color": "#129FCA",
+            "link": "software.html"            
         },
         "other":{
             "image": "images/konstruktion-bild.jpg",
             "text": "Other",
-            "color": "#0C5298"            
+            "color": "#0C5298",
+            "link": "other.html"            
         }
     }
 }

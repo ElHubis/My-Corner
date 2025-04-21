@@ -77,19 +77,11 @@ addEventListener("DOMContentLoaded", function () {
                 const linkElement = document.createElement("a");
                 linkBlock.appendChild(linkElement);
                 linkElement.classList.add("linkElement")
-
-                const killMe = document.createElement("div");
-                linkElement.appendChild(killMe);
-                killMe.classList.add("killMe")
-
-                const imageElement = document.createElement("img");
-                imageElement.src = card.image;
-                imageElement.alt = card.text;
-                killMe.appendChild(imageElement);
+                linkElement.href = card.link;
                 
                 const textElement = document.createElement("h1");
                 textElement.textContent = card.text;
-                killMe.appendChild(textElement);
+                linkElement.appendChild(textElement);
 
                 linkBlocks.appendChild(linkBlock);
             })
