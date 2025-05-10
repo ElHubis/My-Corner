@@ -45,7 +45,7 @@ addEventListener("DOMContentLoaded", function () {
     aboutMeHeader.innerHTML = (`...and <span>who</span> the hell am <span>I</span>?`);
 
     const aboutMeText = document.createElement("p");
-    aboutMeText.innerHTML = (`Ahh, an age old question, as old as humanity itself, really. Possibly even older. But without pretending to some sort of sophisticated philosopher, I'll introduce myself.<br></br>
+    aboutMeText.innerHTML = (`Ahh, an age old question, as old as humanity itself, perchance. I think the egg came first and I would pick unlimited games. But without pretending to be some sort of sophisticated philosopher, I'll introduce myself.<br></br>
                             I'm Ruben. I'm 19 and I live in Sweden. I like making things, and that's mostly why I made this page, to show those things to others. More specifically I like writing, design, programing and construction. I also really like cooking, training and the color <span>purple</span> (surprise) but I'm probably not going to post any of that...unless?<br></br>
                         But yeah that's what I'm offering you, and if you would be so kind as to scroll down a bit you're going to see a few links. Feel free to click them! Or not, but that would be kind of sad :&nbsp;(`); 
     aboutMe.appendChild(aboutMeHeader);

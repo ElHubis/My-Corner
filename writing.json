@@ -1,0 +1,45 @@
+{
+   "texts":{
+    "enGångTill":{
+        "image": "images/httyd.jpg",
+        "textType": "Poem",
+        "title": "En gång till",
+        "year": "2025"
+    },
+
+    "dikten":{
+        "image": "images/howls.jpg",
+        "textType": "Short story",
+        "title": "Dikten",
+        "year": "2024"
+    },
+
+    "längsKorridoren":{
+        "image": "images/mythos.jpg",
+        "textType": "Poem",
+        "title": "Längs korridoren",
+        "Year": "2024"
+    },
+
+    "inspiration":{
+        "image": "images/exhalation.jpg",
+        "textType": "Essay",
+        "title": "Inspiration slås man inte av",
+        "Year": "2024"
+    },
+
+    "Min gamla soffa":{
+        "image": "images/traveling-cat-chronicles.jpg",
+        "textType": "Short story",
+        "title": "Min gamla soffa",
+        "Year": "2023"
+    },
+
+    "livetSom":{
+        "image": "images/björnstad.jpg",
+        "textType": "Short story",
+        "title": "Livet som en pyssling",
+        "Year": "2022"
+    }
+   } 
+}

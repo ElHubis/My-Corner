@@ -136,9 +136,10 @@ img {
   font-family: Futura ND;
 }
 
-.searchBar {
-  margin-left: 2%;
+.nav {
+  margin-left: 2em;
 }
+
 .searchBar input {
   padding: 6px 6px 6px 12px;
   border-radius: 9px;
@@ -146,7 +147,57 @@ img {
   font-size: 1em;
   border: none;
   background-color: #EAEAEA;
-  color: #ACACAC;
+}
+
+.parameters {
+  font-family: Gadner Bold, bold;
+  margin-top: 2em;
+}
+.parameters h2 {
+  font-size: 2em;
+}
+.parameters li {
+  font-size: 1.2em;
+}
+
+.typeList {
+  list-style-type: none;
+}
+.typeList li {
+  margin-left: 1.2em;
+  margin-top: 0.3em;
+}
+
+.mainContainer {
+  display: flex;
+  gap: 100px;
+}
+
+.textContainer {
+  display: flex;
+  column-gap: 150px;
+  row-gap: 25px;
+  flex-wrap: wrap;
+  margin-top: 3em;
+}
+
+.textBlock {
+  width: 200px;
+}
+.textBlock img {
+  width: 200px;
+  height: 300px;
+}
+.textBlock h2 {
+  font-family: Gadner Bold, bold;
+}
+.textBlock p {
+  font-family: Neue Regrade;
+  margin-top: 4px;
+}
+
+.hidden {
+  display: none;
 }
 
 /*# sourceMappingURL=styles.css.map */

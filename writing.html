@@ -5,6 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stylesheets/styles.css">
     <title>Document</title>
+    <style>
+        ::placeholder{
+            color: #acacac;
+        }
+
+        input[type="checkbox"] {
+            accent-color: black;
+        }
+    </style>
 </head>
 <body>
     <header class="header">
@@ -16,11 +25,61 @@
         </p>
     </header>
 
-    <nav class="nav">
-        <div class="searchBar">
-            <input type="search" id="writingSearch" placeholder="Search" name="ws">
-        </div>
-    </nav>
-    
+    <div class="mainContainer" id="mainContainer">
+        <nav class="nav">
+            <div class="searchBar">
+                <input type="search" id="writingSearch" placeholder="Search" name="writingSearch">
+            </div>
+            <div class="parameters type" >
+                <h2>
+                    Type:
+                </h2>
+                <ul class="typeList">
+                    <li>
+                        <input type="checkbox" id="shortStory" name="shortStory">
+                        <label for="shortStory">Short story</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="poem" name="poem">
+                        <label for="poem">Poem</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="essay" name="essay">
+                        <label for="essay">Essay</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="review" name="review">
+                        <label for="review">Review</label>
+                    </li>
+                </ul>
+            </div>
+            <div class="parameters year" >
+                <h2>
+                    Year:
+                </h2>
+                <ul class="typeList">
+                    <li>
+                        <input type="checkbox" id="2025" name="2025">
+                        <label for="2025">2025</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="2024" name="2024">
+                        <label for="2024">2024</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="2023" name="2023">
+                        <label for="2023">2023</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="2022" name="2022">
+                        <label for="2022">2022</label>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+<script src="writing.js"></script>
+
 </body>
 </html>
