@@ -1,6 +1,7 @@
 {
    "texts":{
     "enGångTill":{
+        "linkTitle": "en-gång-till",
         "image": "images/httyd.jpg",
         "textType": "Poem",
         "title": "En gång till",
@@ -8,6 +9,7 @@
     },
 
     "dikten":{
+        "linkTitle": "dikten",
         "image": "images/howls.jpg",
         "textType": "Short story",
         "title": "Dikten",
@@ -15,6 +17,7 @@
     },
 
     "längsKorridoren":{
+        "linkTitle": "längs-korridoren",
         "image": "images/mythos.jpg",
         "textType": "Poem",
         "title": "Längs korridoren",
@@ -22,6 +25,7 @@
     },
 
     "inspiration":{
+        "linkTitle": "inspiration",
         "image": "images/exhalation.jpg",
         "textType": "Essay",
         "title": "Inspiration slås man inte av",
@@ -29,6 +33,7 @@
     },
 
     "Min gamla soffa":{
+        "linkTitle": "min-gamla-soffa",
         "image": "images/traveling-cat-chronicles.jpg",
         "textType": "Short story",
         "title": "Min gamla soffa",
@@ -36,6 +41,7 @@
     },
 
     "livetSom":{
+        "linkTitle": "livet-som-en-pyssling",
         "image": "images/björnstad.jpg",
         "textType": "Short story",
         "title": "Livet som en pyssling",
