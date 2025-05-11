@@ -183,6 +183,11 @@ img {
 
 .textBlock {
   width: 200px;
+  color: #000000;
+  text-decoration: none;
+}
+.textBlock a:visited {
+  color: #000000;
 }
 .textBlock img {
   width: 200px;

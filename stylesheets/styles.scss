@@ -226,6 +226,12 @@ img{
 
 .textBlock{
     width: 200px;
+    color: #000000;
+    text-decoration: none;
+
+    a:visited{
+        color: #000000;
+    }
 
     img{
         width: 200px;

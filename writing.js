@@ -15,7 +15,7 @@ addEventListener("DOMContentLoaded", function (){
             data = texts.map((text) => {
 
                 const textBlock = document.createElement("a");
-                textBlock.href = `writing_subpage.html?book=${text.linkTitle}`
+                textBlock.href = `writing_subpage.html?text=${text.linkTitle}`
                 textBlock.classList.add("textBlock")
 
                 const textImage = document.createElement("img");
