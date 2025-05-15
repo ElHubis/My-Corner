@@ -16,18 +16,24 @@ window.addEventListener("load", function () {
         const textInfo = document.getElementById("textInfo");
         const textBody = document.getElementById("textBody")
 
-        const textCover = document.createElement("img");
+        const textCover = document.getElementById("textCover");
         textCover.src = texts[textId].image;
 
-        textTitle = document.createElement("h1");
+        const textTitle = document.getElementById("textTitle");
         textTitle.textContent = texts[textId].title;
+
+        const typeText = document.getElementById("typeText");
+        typeText.textContent = texts[textId].textType;
+        const yearText = document.getElementById("yearText");
+        yearText.textContent = texts[textId].year;
+        const genreText = document.getElementById("genreText");
+        genreText.textContent = texts[textId].genre;
+        const authorText = document.getElementById("authorText");
+        authorText.textContent = texts[textId].author;
 
         const bodyText = document.createElement("p");
         bodyText.textContent = texts[textId].content
 
-
-        textHeader.appendChild(textCover);
-        textHeader.appendChild(textTitle);
         textBody.appendChild(bodyText);
 
     })

@@ -6,6 +6,8 @@
         "textType": "Poem",
         "title": "Allt en gång till",
         "year": "2025",
+        "genre": "Hubis type beat",
+        "author": "Me, myself & I",
         "content": "Under denna livstid har jag\nEn värld att skapa\nEtt arv att lämna\nEn kärlek att finna\nEtt ömt och värdefullt liv att leva\nOch varje gång\nVarje gång jag ser min värld fallera och rasa\nMitt arv rinna ut i sanden\nMin kärlek med en annan evig\nMinns jag\nAtt jag endast levt igenom arton vårar\nSå jag kan göra allt det här en gång till\nInnan jag levt igenom fyrtio"
     },
 
@@ -15,6 +17,8 @@
         "textType": "Short story",
         "title": "Dikten",
         "year": "2024",
+        "genre": "Hubis type beat",
+        "author": "Me, myself & I",
         "content": " "
     },
 
@@ -23,7 +27,9 @@
         "image": "images/mythos.jpg",
         "textType": "Poem",
         "title": "Längs korridoren",
-        "Year": "2024"
+        "year": "2024",
+        "genre": "Hubis type beat",
+        "author": "Me, myself & I"
     },
 
     "inspiration":{
@@ -31,7 +37,9 @@
         "image": "images/exhalation.jpg",
         "textType": "Essay",
         "title": "Inspiration slås man inte av",
-        "Year": "2024"
+        "Year": "2024",
+        "genre": "Hubis type beat",
+        "author": "Me, myself & I"
     },
 
     "min-gamla-soffa":{
@@ -39,7 +47,9 @@
         "image": "images/traveling-cat-chronicles.jpg",
         "textType": "Short story",
         "title": "Min gamla soffa",
-        "Year": "2023"
+        "Year": "2023",
+        "genre": "Hubis type beat",
+        "author": "Me, myself & I"
     },
 
     "livet-som-en-pyssling":{
@@ -47,7 +57,9 @@
         "image": "images/björnstad.jpg",
         "textType": "Short story",
         "title": "Livet som en pyssling",
-        "Year": "2022"
+        "Year": "2022",
+        "genre": "Hubis type beat",
+        "author": "Me, myself & I"
     }
    } 
 }

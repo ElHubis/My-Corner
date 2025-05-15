@@ -251,3 +251,36 @@ img{
 .hidden{
     display: none;
 }
+
+/*Mixins för writing sub-page*/
+/**/
+
+/*Styling för writing sub-page*/
+/**/
+
+.textHeader{
+    display: flex;
+    justify-content: space-between;
+}
+
+// .infoContainer{
+//     display: flex;
+//     flex-direction: column;
+//     margin: 0 auto;
+// }
+
+.infoText{
+    min-width: 1000px;
+    display: grid;
+
+    p{
+        justify-self: flex-end;
+    }
+}
+
+
+
+.textBody{
+    font-family: $textFont;
+    white-space: pre;
+}

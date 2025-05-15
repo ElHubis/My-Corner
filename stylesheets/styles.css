@@ -205,4 +205,26 @@ img {
   display: none;
 }
 
+/*Mixins för writing sub-page*/
+/**/
+/*Styling för writing sub-page*/
+/**/
+.textHeader {
+  display: flex;
+  justify-content: space-between;
+}
+
+.infoText {
+  min-width: 1000px;
+  display: grid;
+}
+.infoText p {
+  justify-self: flex-end;
+}
+
+.textBody {
+  font-family: Futura ND;
+  white-space: pre;
+}
+
 /*# sourceMappingURL=styles.css.map */
